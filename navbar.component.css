@@ -1,0 +1,20 @@
+.buttons{
+    text-indent: 25em;
+}
+.mtb{
+    color: rgb(0, 17, 255);
+}
+.BB{
+    color: rgb(255, 38, 0);
+    box-shadow: red;
+}
+.mat-toolbar{
+    background: teal;
+    color: yellow;
+}
+.h1{
+    text-align: center;
+    color: blue;
+}
+
+

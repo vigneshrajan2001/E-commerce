@@ -1,0 +1,76 @@
+<button  class="close-icon" matSuffix [mat-dialog-close]="true" mat-mini-fab color="primary">
+    <mat-icon>close</mat-icon>
+  </button>
+  <br>
+  <h2 style="text-align: center; color:blue; font-family: 'Times New Roman', Times, serif;">WELCOME BACK</h2>
+  <br>
+  
+  <mat-grid-list cols="1" rowHeight="100px" >
+
+    <form [formGroup]="service.formValidate1" (ngsubmit)="submitData1()">        
+    <mat-grid-tile>
+      <div class="controles1">
+        <mat-label><b>Username : </b></mat-label>
+        <mat-form-field appearance="fill"> 
+          <input formControlName="Username" matInput placeholder="user@example.com" >
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+  
+    <!-- <mat-grid-tile>
+      <div class="controles2">
+        <mat-label><b>Email : </b></mat-label>
+        <mat-form-field appearance="fill">
+          <input formControlName="Email" matInput placeholder="pat@example.com" required>
+        </mat-form-field>
+      </div>  
+    </mat-grid-tile> -->
+  
+    <mat-grid-tile>
+      <div class="controles3">
+        <mat-label><b>Password : </b></mat-label>
+        <mat-form-field appearance="fill">
+          <input formControlName="Password" type="password" matInput placeholder="Password" required>
+        </mat-form-field>
+      </div>
+   </mat-grid-tile>
+  
+    <!-- <mat-grid-tile>
+      <div class="controles4">
+        <mat-label><b>Confirm Password : </b></mat-label>
+        <mat-form-field appearance="fill">
+          <input type="password" formControlName="ConfirmPassword" matInput placeholder="Password" required>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile> -->
+  
+    <!-- <mat-grid-tile>
+      <div class="controles5">
+        <mat-label><b>Phone Number : </b></mat-label>
+        <mat-form-field appearance="fill">
+          <input formControlName="PhoneNumber" matInput placeholder="@1234" required>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile> -->
+  
+    <mat-grid-tile>
+      <div class="button-row">
+      <button mat-raised-button color="primary" (click)="submitData1()" [disabled]="service.formValidate1.invalid">LOGIN</button>
+    &nbsp;
+    <button mat-raised-button color="primary" (click)="ClearValue1()">CLEAR</button>
+  </div>
+  </mat-grid-tile>
+  <br>
+  <br>
+
+  <mat-grid-tile>
+    <div class="button-row">
+   
+        <h3>New User?<button class="A" mat-raised-button color="primary" (click)="opendialog()">Create New Account</button>
+        </h3>
+  
+</div>
+</mat-grid-tile>
+    
+  </form>
+  </mat-grid-list>

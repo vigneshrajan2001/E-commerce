@@ -1,0 +1,21 @@
+.mat-grid-list{
+    /* background-image: url("https://cdn.slidesharecdn.com/ss_thumbnails/doorstepservices-170118171024-thumbnail-4.jpg?cb=1484759512");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity: 0.5; */
+    /* background-image: url("https://cdn.slidesharecdn.com/ss_thumbnails/doorstepservices-170118171024-thumbnail-4.jpg?cb=1484759512");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%; */
+    opacity: 1.0;
+    box-shadow: 0 0 5px 0;
+    /* background: inherit; */
+    /* backdrop-filter:blur(2px); */
+    
+
+
+}
+.h2{
+    text-align: center;
+}
